@@ -1,11 +1,21 @@
 import java.util.ArrayList;
-import java.util.Map;
 
 public class RepeatingInArray {
     public static void main(String[] args) {
 
     }
 
+    /**
+     * Given two integer arrays, A and B of size N and M, respectively. Your task is to find all the common elements in both the array.
+     *
+     * NOTE:
+     *
+     * Each element in the result should appear as many times as it appears in both arrays.
+     * The result can be in any order.
+     * @param A
+     * @param B
+     * @return
+     */
     public ArrayList<Integer> solve(ArrayList<Integer> A, ArrayList<Integer> B) {
 
         ArrayList<Integer> result = new ArrayList<>();
