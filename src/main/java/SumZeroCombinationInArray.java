@@ -47,6 +47,7 @@ public class SumZeroCombinationInArray {
     }
 
     private static Integer[] removeElementAt(Integer[] array, int index) {
+
         Integer[] newArray = new Integer[array.length - 1];
         for (int i = 0; i < array.length; i++) {
             if (i < index) {
@@ -59,15 +60,14 @@ public class SumZeroCombinationInArray {
     }
 
     private static Integer[] removeElement(Integer[] array, int el) {
+
         Integer[] newArray = new Integer[array.length];
         boolean isFound = false;
-
         for (int i = 0; i < array.length; i++) {
 
             if (!isFound && array[i] == el) {
                 isFound = true;
             }
-
             if (!isFound) {
                 newArray[i] = array[i];
             } else if (i != array.length - 1) {
@@ -76,6 +76,4 @@ public class SumZeroCombinationInArray {
         }
         return isFound ? Arrays.copyOfRange(newArray, 0, array.length - 1) : array;
     }
-
-
 }
