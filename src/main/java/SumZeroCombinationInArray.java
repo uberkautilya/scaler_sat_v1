@@ -23,7 +23,7 @@ public class SumZeroCombinationInArray {
         for (int i = 0; i < array.length; i++) {
             int newSum = sum + array[i];
             if (newSum == 0) {
-                findEffectiveArray(originalArray, removeElementAt(array, i));
+                printEffectiveArray(originalArray, removeElementAt(array, i));
                 return true;
             }
             Integer[] newArray = removeElementAt(array, i);
@@ -35,7 +35,7 @@ public class SumZeroCombinationInArray {
         return false;
     }
 
-    private static void findEffectiveArray(Integer[] originalArray, Integer[] integers) {
+    private static void printEffectiveArray(Integer[] originalArray, Integer[] integers) {
         System.out.println("originalArray = " + Arrays.toString(originalArray));
         System.out.println("integers = " + Arrays.toString(integers));
         Integer[] effectiveArray = null;
