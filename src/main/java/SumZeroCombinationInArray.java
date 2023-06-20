@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * Return true if any combination exists among the elements whose sum is zero
@@ -16,7 +15,7 @@ public class SumZeroCombinationInArray {
         if (doExist) {
             System.out.println("Combination exists whose sum is Zero");
         } else
-            System.out.println("No such combination exist");
+            System.out.println("No such combination exists");
     }
 
     private static boolean combinationExists(Integer[] array, int sum) {
